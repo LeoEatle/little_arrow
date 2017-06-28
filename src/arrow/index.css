@@ -1,0 +1,23 @@
+.arrow {
+    content: '';
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-width: 2px 2px 0 0;
+    border-color: #c7c7c7;
+    border-style: solid;
+
+    transition: transform 0.5s;
+}
+
+.arrow_up {
+    /*注意这里要位移之后才能保证和向下箭头同样位置
+    位移数值可以通过画图算出（即宽高的一半）*/
+    transform: rotate(-45deg) translate(-4.5px, 4.5px);
+    margin-left: 10px;
+}
+
+.arrow_down {
+    transform: rotate(135deg);
+    margin-left: 10px;
+}
